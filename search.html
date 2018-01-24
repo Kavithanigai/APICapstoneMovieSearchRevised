@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="movie search, movies near me">
+    <meta name="author" content="Kavi Than">
+    <title>API Capstone Movie Search | Welcome</title>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <link href="grid.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">KT</span> Movie Search</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="current"><a href="search.html">Movie Search</a></li>
+            <li><a href="gmaps.html">Movie Theaters Near Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Section for Search Movies-->
+    <section role='section'>
+     <div id="search">
+      <div class="row">
+      <div class="col-12">
+      <div class="container">
+        <h1>Search Movie Title</h1>
+        <form action="#" class="js-search-form">
+          <label for="title"></label>
+          <input type="text" class="js-title" placeholder="Enter a Movie title">
+          <button type="submit" class="searchBtn">Search</button>
+        </form>
+          </div><!-- Closing for search div -->
+        </div><!-- Closing for col-12 div -->
+      </div><!-- Closing for row div -->
+    </div><!-- Closing for container div -->
+    </section>
+
+    <!-- Section for display movie list-->
+    <section role='section'>
+    <div id='movies'>
+      <div class="container searchMovies">
+        <div class="row">
+        </div><!-- Closing for row div -->
+      </div><!-- Closing for container div -->
+    </div><!-- Closing for movies div -->
+   </section>
+
+  <!-- Section for displaying Map with movie theaters near user-->
+  <section role='section'>
+  <div class="container">
+   <div class="row">
+     <div class='col-12'>
+       <div id='map'>
+       </div><!-- Closing for singleMovie div -->
+     </div><!-- Closing for col-3 div -->
+   </div><!-- Closing for row div -->
+   </div><!-- Closing for container div -->
+  </section>
+
+   <!-- Section for footer-->
+     <footer>
+       <div class="container">
+        <p>KT Movie Search, Copyright &copy; 2018</p>
+       </div><!-- Closing for container div -->
+     </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src= "index.js"></script>
+    <script>
+       $(searchEntry());</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnqlJ1LHqtkZFHEf2EgwKg07v8zyIo1Ds&libraries=places" async defer></script>
+    <script src= "index.js"></script>
+    <script>$(searchEntry());</script>
+  </body>
+</html>
